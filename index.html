@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ここなふぁくとりー</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script type="text/javascript" src="js/jquery.slideshow.js"></script>
+<script>
+$(function($){
+	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10});
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slideshow({
+		touch		: true,
+		touchDistance : '80',
+		bgImage	  : false,
+		autoSlide	: true,
+		effect	   : 'slide',
+		repeat	   : true,
+		easing	   : 'swing',
+		interval	 : 3000,
+		duration	 : 500,
+		imgHoverStop : true,
+		navHoverStop : true,
+		navImg	   : false,
+		navImgCustom : false,
+		navImgSuffix : ''
+	});
+	$('.slidePrev img').rollover();
+	$('.slideNext img').rollover();
+	});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="contents">
+	<div id="sub">
+		<header>
+			<h1><a href="index.html">HTML5/CSS3デザインテンプレート</a></h1>
+			<p class="summary">
+			この箇所はホームページの説明文など記載するのに最適です。
+			</p>
+		</header>
+		<nav>
+			<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
+			<ul>
+				<li><a href="index.html">ホーム</a></li>
+				<li><a href="index.html">サービス</a></li>
+				<li><a href="index.html">スタッフ</a></li>
+				<li><a href="index.html">ブログ</a></li>
+				<li><a href="index.html">お問い合わせ</a></li>
+				<li><a href="sample.html">サンプル</a></li>
+			</ul>
+		</nav>
+	</div><!-- /#sub -->
+	<div id="main">
+		<div class="slide">
+			<ul class="slideInner">
+				<li><a href="index.html"><img src="images/photo01.jpg" alt=""></a></li>
+				<li><a href="index.html"><img src="images/photo02.jpg" alt=""></a></li>
+				<li><a href="index.html"><img src="images/photo03.jpg" alt=""></a></li>
+			</ul>
+			<div class="slidePrev"><img src="images/nav_prev.png" alt="前へ"></div>
+			<div class="slideNext"><img src="images/nav_next.png" alt="次へ"></div>
+			<div class="controlNav"></div>
+		</div><!-- /.slide -->
+		<h2>新着情報</h2>
+		<dl class="info">
+		   <dt><span>20XX-01-01</span></dt>
+		   <dd>
+				 更新情報などを掲載するのに便利なデザインです。dlタグに『class="info"』を追加してください。
+		   </dd>
+		   <dt><span>20XX-01-01</span></dt>
+		   <dd>
+				 更新情報などを掲載するのに便利なデザインです。
+		   </dd>
+		</dl>
+		<div class="service">
+			<h3>サービス</h3>
+			<ul>
+				<li><img src="images/photo.png" alt=""></li>
+				<li><img src="images/photo.png" alt=""></li>
+				<li><img src="images/photo.png" alt=""></li>
+				<li><img src="images/photo.png" alt=""></li>
+				<li><img src="images/photo.png" alt=""></li>
+				<li><img src="images/photo.png" alt=""></li>
+				<li><img src="images/photo.png" alt=""></li>
+				<li><img src="images/photo.png" alt=""></li>
+				<li><img src="images/photo.png" alt=""></li>
+				<li><img src="images/photo.png" alt=""></li>
+			</ul>
+			<p class="textR"><a href="index.html">&raquo;もっと見る</a></p>
+		</div><!-- /.service -->
+		
+	</div><!-- /#main -->
+</div><!-- /#contents -->
+
+<footer>
+	<div class="footmenu">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="index.html">メニュー・料金</a></li>
+			<li><a href="index.html">ご予約</a></li>
+			<li><a href="index.html">ブログ</a></li>
+			<li><a href="index.html">お問い合わせ</a></li>
+			<li><a href="sample.html">SAMPLE</a></li>
+		</ul>
+	</div><!-- /.footmenu -->
+	<div class="copyright">Copyright &#169; 20XX - 20XX SITENAME All Rights Reserved.</div><!-- /.copyright -->
+</footer>
+
+<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+</body>
+</html>
